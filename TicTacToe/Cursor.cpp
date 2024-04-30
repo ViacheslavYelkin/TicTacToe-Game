@@ -13,7 +13,7 @@ void Cursor::moveCursor(EDirection direction)
 {
 	game_field_->insert(replaced_sign_, location_->x_, location_->y_); // placing memorized character in its place
 
-	// moving cursor dependent on given direction, if location out of bounds, cycling and return to begin/end of row/column 
+	// moving cursor depending on given direction, if location out of bounds, cycling and return to begin/end of row/column 
 	switch (direction) { 
 	case EDirection::UP:
 		if (!game_field_->isInBounds(location_->x_ - 1, location_->y_)) {
