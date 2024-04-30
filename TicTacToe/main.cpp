@@ -17,6 +17,10 @@ int main(int argc, char** argv) {
 		{
 			repeat_game = false;
 		}
+		else if (answer == 'y') {
+			continue;
+		}
+
 		delete game;
 	}
 
