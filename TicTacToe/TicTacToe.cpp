@@ -21,10 +21,10 @@ TicTacToe::TicTacToe()
 
 void TicTacToe::start()
 {
-	bool is_output_correct{ false };
+	bool is_input_correct{ false };
 
 	// looping while user won't pass asked value
-	while (!is_output_correct) {
+	while (!is_input_correct) {
 		std::cout << "Welcome to 'Tic Tac Toe'. Please choose your side.\n1 - 'X' or 2 - 'O'\n";
 
 		// getting value from user
@@ -36,12 +36,12 @@ void TicTacToe::start()
 		case '1':
 			players_.push_back(std::make_unique<Player>('X'));
 			players_.push_back(std::make_unique<Player>('O'));
-			is_output_correct = true;
+			is_input_correct = true;
 			break;
 		case '2':
 			players_.push_back(std::make_unique<Player>('O'));
 			players_.push_back(std::make_unique<Player>('X'));
-			is_output_correct = true;
+			is_input_correct = true;
 			break;
 		}
 	}
